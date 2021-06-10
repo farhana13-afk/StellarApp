@@ -1,13 +1,14 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
 import DailyPicScreen from './screens/DailyPic';
 import SpaceCraftsScreen from './screens/SpaceCrafts';
 import StarMapScreen from './screens/StarMap';
 import HomeScreen from './screens/Home';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackContainer} from '@react-navigation/stack';
 
-const Stack = createStackContainer();
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
